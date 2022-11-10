@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>KilometerProMünchen</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+
+</head>
+
+
+<style>
+  html {
+    margin-top: 40px;
+  }
+
+  .button.button-search,
+  button.button-search,
+  input[type="submit"].button-search,
+  input[type="reset"].button-search,
+  input[type="button"].button-search {
+    color: #FFF;
+    background: url(images/search.svg) no-repeat;
+    border-color: #d1d1d1;
+    background-position: center;
+  }
+
+  .button.button-search:hover,
+  button.button-search:hover,
+  input[type="submit"].button-search:hover,
+  input[type="reset"].button-search:hover,
+  input[type="button"].button-search:hover,
+  .button.button-search:focus,
+  button.button-search:focus,
+  input[type="submit"].button-search:focus,
+  input[type="reset"].button-search:focus,
+  input[type="button"].button-search:focus {
+    color: #FFF;
+    background: url(images/search.svg) no-repeat;
+    border-color: #33C3F0;
+    background-position: center;
+  }
+
+  .button.button-reload,
+  button.button-reload,
+  input[type="submit"].button-reload,
+  input[type="reset"].button-reload,
+  input[type="button"].button-reload {
+    color: #FFF;
+    background: url(images/refresh-ccw.svg) no-repeat;
+    border-color: #d1d1d1;
+    background-position: center;
+  }
+
+  .button.button-reload:hover,
+  button.button-reload:hover,
+  input[type="submit"].button-reload:hover,
+  input[type="reset"].button-reload:hover,
+  input[type="button"].button-reload:hover,
+  .button.button-reload:focus,
+  button.button-reload:focus,
+  input[type="submit"].button-reload:focus,
+  input[type="reset"].button-reload:focus,
+  input[type="button"].button-reload:focus {
+    color: #FFF;
+    background: url(images/refresh-ccw.svg) no-repeat;
+    border-color: #33C3F0;
+    background-position: center;
+  }
+
+
+
+  span.tiny {
+    font-size: 3rem
+  }
+
+  span.red {
+    font-size: 2rem;
+    color: red;
+  }
+</style>
+
+<body>
+
+  <div class="container" style="max-width:700px;text-align:center">
+
+    <div id="heading" style="display:block" class="row">
+      <div class="eleven columns">
+        <h1>Wie viele Stunden ist das <br /> von München weg?</h1>
+      </div>
+
+    </div>
+
+    <div id="search-bar" style="display:block" class="row">
+      <div class="eleven columns">
+        <input class="u-full-width" type="text" id="place" name="place" placeholder="Ort, Stadt, oder PLZ eingeben">
+      </div>
+      <div class="one column">
+        <input type="button" id="search" name="search" class="button-search u-pull-left" />
+      </div>
+    </div>
+
+    <div id="warning" style="display:none">
+      <span class="red" id="warningmessage"></span>
+    </div>
+
+
+    <div style="text-align:center; display:none" id="result">
+      <h3 id="term" style="padding : 0; margin : 0;">
+        <!-- Stadt ist -->
+      </h3></br>
+      <h3>ist</h3>
+      <p>
+        <span id="time" class="big">
+          <!-- Anzahl Stunden -->
+        </span> </br>
+        <span id="Stunden" class="small">Stunden</span>
+      </p>
+      <h3>von München weg</h3>
+    </div>
+
+
+    </br>
+    </br>
+
+    <input style="margin: 0 auto; display:none" type="button" id="reload" name="reload" class="button-reload" />
+
+    </br>
+    </br>
+
+
+
+
+  </div>
+
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
